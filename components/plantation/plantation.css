@@ -1,0 +1,129 @@
+.plantation-wrap {
+  padding-bottom: 2.5rem !important;
+}
+@media screen and (min-width: 768px) {
+  .plantation-wrap {
+    padding-bottom: 5rem !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .plantation-wrap {
+    padding-bottom: 6.875rem !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .plantation-wrap {
+    padding-bottom: 9.375rem !important;
+  }
+}
+.plantation-wrap .plantation-bg {
+  background-image: url(../../assets/images/plantation/1.png);
+  min-height: 33.25rem;
+  padding-bottom: 9.375rem;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .plantation-wrap .plantation-bg {
+    min-height: 46.875rem;
+  }
+}
+.plantation-wrap .plantation-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0.07deg, rgba(0, 25, 40, 0.6) 27.15%, rgba(0, 36, 8, 0.342) 101.33%);
+}
+.plantation-wrap .plantation-bg .plantation-content {
+  position: absolute;
+  z-index: 999;
+  top: unset;
+  bottom: 57px;
+  left: 1rem;
+  transform: translate(0, 0);
+  text-align: start;
+  max-width: 500px;
+}
+@media screen and (min-width: 768px) {
+  .plantation-wrap .plantation-bg .plantation-content {
+    top: 50%;
+    left: 50%;
+    max-width: 42.75rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.plantation-wrap .plantation-bg .plantation-content > div {
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 992px) {
+  .plantation-wrap .plantation-bg .plantation-content > div {
+    margin-bottom: 3.75rem !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .plantation-wrap .plantation-bg .plantation-content > div {
+    margin-bottom: 4.0625rem !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .plantation-wrap .plantation-bg .plantation-content > div {
+    margin-bottom: 4.6875rem !important;
+  }
+}
+.plantation-wrap .plantation-bg .plantation-content > div .ttl-52 {
+  line-height: 1;
+  color: #fff;
+  font-family: "Baskervville", serif;
+  margin-bottom: 0.9375rem;
+  font-size: 2rem;
+  text-align: start;
+}
+@media screen and (min-width: 768px) {
+  .plantation-wrap .plantation-bg .plantation-content > div .ttl-52 {
+    text-align: center;
+    font-size: 2.1875rem;
+    margin-bottom: 1.125rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .plantation-wrap .plantation-bg .plantation-content > div .ttl-52 {
+    font-size: 2.5rem;
+    margin-bottom: 1.875rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .plantation-wrap .plantation-bg .plantation-content > div .ttl-52 {
+    font-size: 3.25rem;
+  }
+}
+.plantation-wrap .plantation-bg .plantation-content > div .fs-18 {
+  line-height: 1.66;
+  font-size: 1rem;
+  text-align: start;
+}
+@media screen and (min-width: 768px) {
+  .plantation-wrap .plantation-bg .plantation-content > div .fs-18 {
+    text-align: center;
+    font-size: 1.125rem;
+  }
+}
+
+.plantation-btn-wrap {
+  text-align: start;
+}
+@media screen and (min-width: 768px) {
+  .plantation-btn-wrap {
+    text-align: center;
+  }
+}
+.plantation-btn-wrap .btn-outline-light {
+  width: calc(100% - 16px);
+}
+@media screen and (min-width: 475px) {
+  .plantation-btn-wrap .btn-outline-light {
+    width: max-content;
+  }
+}

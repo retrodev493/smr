@@ -1,0 +1,99 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+.carrer-wrapper{
+    padding-bottom: size(50) !important;
+    @include min(768){
+        padding-bottom: size(80) !important;
+
+    }
+    @include min(1200){
+        padding-bottom: size(110) !important;
+
+    }
+    @include min(1400){
+    padding-bottom: size(150) !important;
+
+    }
+    .carrer-wrap{
+        max-width: size(1293);
+        margin: auto;
+        gap: 30px;
+        flex-direction: column;
+        @include min(992){
+            flex-direction: row;
+            gap: 60px;
+
+        }
+        @include min(1200){
+            gap: 80px;
+
+        }
+        @include min(1400){
+            gap: 102px;
+
+        }
+    }
+    .carrer-banner-img{
+        
+        width: 100%;
+        @include min(992){
+            width: 62%;
+
+        }
+        figure{
+            @include aspectRatio(470 , 696)
+        }
+    }
+    .carrer-content-wrapper{
+        width: 100%;
+        @include min(992){
+            width: 38%;
+
+        }
+        .ttl-52{
+            line-height: 1;
+            font-family: $secondary-font;
+            color: $secondary-color;
+            margin-bottom: size(20);
+            font-size: size(32);
+            @include min(768){
+               font-size: size(35);
+
+            }
+            @include min(1200){
+               font-size: size(40);
+               margin-bottom: size(30);
+
+            }
+            @include min(1400){
+               font-size: size(52);
+            }
+        }
+        .fs-18{
+            line-height: 1.66;
+            color: $secondary-color;
+            margin-bottom: size(40);
+            @include min(992){
+            margin-bottom: size(50);
+
+            }
+            @include min(1200){
+            margin-bottom: size(60);
+
+            }
+            @include min(1400){
+            margin-bottom: size(75);
+            }
+        }
+    }
+}
+
+.carrer-btn-wrapper{
+    .btn-outline-primary{
+        width: 100%;
+        @include min(475){
+            width: max-content;
+        }
+    }
+}

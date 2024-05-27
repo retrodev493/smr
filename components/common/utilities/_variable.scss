@@ -1,0 +1,187 @@
+$primary-color: #085F8B !default; // blue
+$secondary-color: #001B3B !default; // darkblue
+$light-color:#fff;
+$text-color: #fff;
+$gray-color: #7E7E7E;
+$gray-border:#DFE6F2;
+$white: #fff !default;
+$black: #000 !default;
+$light-blue-background:linear-gradient(284.65deg, rgba(71, 160, 198, 0.2) 9.88%, rgba(214, 255, 241, 0.2) 96.19%);
+$dark-blue-gradient: linear-gradient(180deg, #001222 51.3%, #00254B 100%);
+
+// Font Family
+
+$font-family: 'Plus Jakarta Sans', sans-serif;
+$secondary-font:"Baskervville", serif;
+
+//button
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-weight-title: $font-semibold;
+// Spacing
+$gutter-1: 30px !default; // 30px
+$spacing: 50px !default; // 50px.
+// zindex
+$header-z: 999;
+$filter-z: 99;
+
+$primary: $primary-color !default;
+$secondary: $secondary-color !default;
+$light :$light-color;
+
+// theme colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+);
+
+//breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1420px,
+);
+
+//adjust the container sizes here
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1613px
+);
+
+// base font
+$base-font-sizes: (
+  null : 13px,
+  768px : 14px,
+  1200px : 15px,
+  1350px: 16px
+);
+
+// Font size
+$base-font: 16;
+
+$fontSizes : (
+  14,
+  18,
+  24,
+  60
+  );
+
+$ttlSizes: (
+  20,
+  30,
+  35,
+  52,
+  85
+);
+
+$fontWeight: (
+  200 : light,
+  300 : thin,
+  400 : normal,
+  500 : medium,
+  600 : semi-bold,
+  700 : bold
+);
+
+// headings
+$h-font: $font-family;
+$h-color: $text-color;
+$h-sizes: (
+  1: (null: 40,
+    992: 45,
+    1200: 64,
+    1600: 75,
+  ),
+  2: (null: 30,
+    992: 34,
+    1200: 40,
+    1600: 55,
+  ),
+  3: (null: 28,
+    992: 35,
+    1200: 45,
+  ),
+  4: (null: 24,
+    992: 30,
+    1200: 40,
+  ),
+  5: (null: 18,
+    768: 24,
+    1200: 30,
+  ),
+  6: (null: 16,
+    992: 18,
+  ),
+);
+
+// common title
+
+$ttl-sizes: (
+  20: (
+    null: 18,
+    1600: 20,
+  ),
+  30: (
+    null: 20,
+    992: 24,
+    1200: 28,
+    1600: 30,
+  ),
+  35: (
+    null: 25,
+    992: 27,
+    1200: 30,
+    1600:35
+  ),
+  52: (
+    null: 52,
+    992: 52,
+    1200: 52,
+    1600:52
+  ),
+
+  85: (
+    null: 52,
+    992: 60,
+    1200: 72,
+    1600:85
+  ),
+);
+
+// // paragraphs
+$p-sizes: (
+  14: (
+    null: 14,
+  ),
+  16: (
+    null: 14,
+    768: 15,
+    1200: 16,
+  ),
+
+  18: (
+    null: 18,
+    768: 18,
+    1200: 18,
+  ),
+  24: (
+    null: 16,
+    768: 22,
+    1200:24,
+  ),
+  60: (
+    null: 40,
+    768:50,
+    1200: 60,
+  ),
+);

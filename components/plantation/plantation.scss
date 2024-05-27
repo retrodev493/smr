@@ -1,0 +1,118 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+
+.plantation-wrap{
+    padding-bottom: size(40) !important;
+    @include min(768){
+        padding-bottom: size(80) !important;
+
+    }
+    @include min(1200){
+        padding-bottom: size(110) !important;
+
+    }
+    @include min(1400){
+    padding-bottom: size(150) !important;
+
+    }
+    .plantation-bg{
+       background-image: url(../../assets/images/plantation/1.png);
+       min-height: size(532);
+       padding-bottom: size(150);
+       position: relative;
+       @include min(992){
+       min-height: size(750);
+       }
+       &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       background: linear-gradient(0.07deg, rgba(0, 25, 40, 0.6) 27.15%, rgba(0, 36, 8, 0.342) 101.33%);
+
+       }
+
+       .plantation-content{
+        position: absolute;
+        z-index: 999;
+        top: unset;
+        bottom: 57px;
+        left: size(16);
+        transform: translate(0 , 0);
+        text-align: start;
+        max-width: 500px;
+
+        @include min(768){
+        top: 50%;
+        left: 50%;
+        max-width: size(684);
+
+        transform: translate(-50% , -50%);
+        text-align: center;
+        }
+
+        &>div{
+               margin-bottom: size(40) ;
+
+    @include min(992) {
+        margin-bottom: size(60) !important;
+    }
+
+    @include min(1200) {
+        margin-bottom: size(65) !important;
+    }
+
+    @include min(1400) {
+        margin-bottom: size(75) !important;
+    }
+            .ttl-52 {
+             line-height: 1;
+             color: $white;
+             font-family: $secondary-font;
+             margin-bottom: size(15);
+             font-size: size(32);
+             text-align: start;
+             @include min(768){
+                text-align: center;
+                font-size: size(35);
+                margin-bottom: size(18);
+
+             }
+             @include min(1200){
+                font-size: size(40);
+             margin-bottom: size(30);
+
+             }
+             @include min(1400){
+                font-size: size(52);
+             }
+            }
+            .fs-18{
+             line-height: 1.66;
+             font-size: size(16);
+             text-align: start;
+             @include min(768){
+                text-align: center;
+             font-size: size(18);
+             }
+            }
+        }
+       }
+    }
+}
+.plantation-btn-wrap{
+    text-align: start;
+
+    @include min(768){
+        text-align: center;
+    }
+    .btn-outline-light{
+        width: calc(100% - 16px);
+        @include min(475){
+        width: max-content;
+        }
+    }
+}

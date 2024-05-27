@@ -1,0 +1,229 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+
+.footer {
+    background: $dark-blue-gradient;
+
+    .footer-container {
+        max-width: size(1360);
+        padding: 0 size(16);
+        margin: auto;
+
+        .top-footer {
+            padding-top: size(70);
+            padding-bottom: size(70);
+            border-bottom: 1px solid #919dac38;
+
+            @include min(992) {
+                padding-top: size(80);
+                padding-bottom: size(75);
+
+
+            }
+
+            @include min(1200) {
+                padding-top: size(85);
+                padding-bottom: size(80);
+
+            }
+
+            @include min(1400) {
+                padding-top: size(95);
+                padding-bottom: size(86);
+
+            }
+
+            &>div {
+                flex-direction: column;
+                align-items: flex-start;
+
+                @include min(992) {
+                    flex-direction: row;
+                    align-items: center;
+                }
+
+                .btn-light {
+                    width: 100%;
+
+                    @include min(475) {
+                        width: max-content;
+                    }
+                }
+            }
+
+            .ttl-52 {
+                font-family: $secondary-font;
+                font-size: size(40);
+                margin-bottom: 50px;
+
+                @include min(768) {
+                    font-size: size(45);
+                    margin-bottom: 60px;
+
+
+                }
+
+                @include min(992) {
+                    margin-bottom: 0;
+                }
+
+                @include min(1200) {
+                    font-size: size(48);
+
+                }
+
+                @include min(1400) {
+                    font-size: size(52);
+                }
+            }
+        }
+    }
+}
+
+.bottom-footer {
+    padding-top: size(40);
+    padding-bottom: size(40);
+
+    @include min(992) {
+        padding-top: size(50);
+        padding-bottom: size(50);
+    }
+
+    @include min(1200) {
+        padding-top: size(60);
+        padding-bottom: size(60);
+    }
+
+    @include min(1400) {
+        padding-top: size(71);
+        padding-bottom: size(81);
+    }
+
+    .footer-content-wrapper {
+        gap: 17px !important;
+
+        @include min(992) {
+            gap: 0;
+        }
+
+        ul {
+            padding: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style: none;
+                padding: 4px 0;
+                @include min(992){
+                padding: 10px 0;
+
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #BCC5D0;
+                    font-weight: 400;
+                    font-size: size(16) !important;
+                    line-height: 1.26;
+                    transition: color 0.2s ease-in;
+                    @include min(992){
+                        font-size: size(18) !important;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        color: #f8f8f8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-contact-links {
+    .fs-18 {
+        margin-bottom: size(22);
+        line-height: 1.26;
+        font-size: size(18) !important;
+       
+    }
+
+    ul {
+        margin-bottom: size(0) !important;
+
+        @include min(992) {
+            margin-bottom: size(30) !important;
+
+        }
+
+        li {
+            padding: size(5) 0 !important;
+        }
+    }
+
+    .footer-email {
+        margin-bottom: size(39);
+
+        a {
+            text-decoration: none;
+            color: #BCC5D0;
+            font-size: size(16);
+            line-height: 1.26;
+            transition: color 0.2s ease-in;
+
+            &:hover {
+                    color: #f8f8f8;
+            }
+            @include min(992){
+                font-size: size(18);
+            }
+        }
+    }
+}
+
+.social-media-links {
+    max-width: 180px;
+    width: 100%;
+    margin: auto;
+    @include min(768){
+        margin: unset;
+    }
+    ul {
+        li {
+            transition: all 0.3s ease-in;
+
+            &:hover {
+                transform: translateY(-5px)
+            }
+        }
+    }
+}
+
+.ftr-rights-content {
+    padding-bottom: size(40);
+
+    @include min(992) {
+        padding-bottom: size(50);
+
+    }
+
+    @include min(1200) {
+        padding-bottom: size(55);
+
+    }
+
+    @include min(1400) {
+        padding-bottom: size(60);
+
+    }
+
+    .fs-16 {
+        color: #919DAC;
+
+    }
+
+    .tech-provider {
+        color: $white;
+    }
+}

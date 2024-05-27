@@ -1,0 +1,145 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+.smrgroup-wrapper {
+    padding-bottom: 50px !important;
+
+    @include min(768) {
+        padding-bottom: 80px !important;
+
+    }
+
+    @include min(1200) {
+        padding-bottom: 110px !important;
+
+    }
+
+    @include min(1400) {
+        padding-bottom: 150px !important;
+
+    }
+
+    .smrgroup-wrap {
+        max-width: size(1076) !important;
+        margin: 0 auto;
+
+        .btn-outline-primary {
+            width: 100%;
+
+            @include min(475) {
+                width: max-content;
+            }
+        }
+    }
+
+    .smrgroup {
+        margin-bottom: size(50) !important;
+
+        @include min(992) {
+            margin-bottom: size(60) !important;
+        }
+
+        @include min(1200) {
+            margin-bottom: size(65) !important;
+        }
+
+        @include min(1400) {
+            margin-bottom: size(75) !important;
+        }
+
+        .ttl-35 {
+            color: $secondary-color !important;
+            font-family: $secondary-font;
+            text-align: center;
+            margin-bottom: size(50);
+            line-height: 1.57;
+
+            @include min(756) {
+                margin-bottom: size(60);
+
+            }
+
+            @include min(992) {
+                margin-bottom: size(70);
+
+            }
+
+            @include min(1200) {
+                margin-bottom: size(80);
+
+            }
+
+            @include min(1400) {
+                margin-bottom: size(90);
+
+            }
+        }
+    }
+}
+
+.smr-box-wrapper {
+    width: 176px !important;
+
+    .fs-60 {
+        color: $secondary-color;
+        margin-bottom: size(10);
+
+        @include min(992) {
+            margin-bottom: size(20);
+        }
+    }
+
+    .fs-18 {
+        color: $secondary-color;
+    }
+    text-align: start;
+    @include min(545) {
+        flex-direction: row;
+        text-align: center;
+    }
+}
+
+.smrcard-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    @include min(992) {
+        flex-wrap: nowrap;
+    }
+
+    @include min(545) {
+        flex-direction: row;
+    }
+}
+
+// .smr-chat {
+//     display: none;
+//     position: sticky;
+    
+//     @media (min-width: 992px) {
+//         bottom: -65px;
+//         right: 0;
+//         width: 63px;
+//         height: 63px;
+//         background-color: $secondary-color;
+//         border-radius: 100%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         border: none;
+//         transition: transform 0.1s ease-in; 
+
+//         &:hover {
+//             transform: scale(1.1);
+//         }
+//     }
+
+//     @media (min-width: 1600px) {
+//         top: 100px;
+//         left:100% !important;
+//         // bottom: 0;
+//         // right: 100px !important;
+//     }
+// }

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=block');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=block');
+
+@import 'utilities/variable';
+@import 'mixins/mixins';
+@import 'mixins/root-mixins';
+
+// bootstrap
+@import 'bootstrap/bootstrap';
+// Resets
+@import 'utilities/resets';
+@import 'utilities/headings';
+@import 'utilities/buttons';
+
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 7px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.smr-chat {
+  display: none;
+
+    @include min(1200){
+        position: fixed;
+        bottom: 50px;
+        right: 55px;
+        width: 63px;
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 300px;
+    }
+    @include min(1400){
+        right: 150px;
+    }
+    transition: scale 0.3s ease-in-out;
+    &:hover{
+        scale: 1.1;
+    }
+}

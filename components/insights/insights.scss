@@ -1,0 +1,159 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+
+.insightsSwiper{
+    overflow: visible !important;
+    @include min(992){
+        overflow: hidden !important;
+    }
+}
+
+.insights-wrapper{
+    padding-bottom: size(50);
+    @include min(992){
+        padding-bottom: size(60);
+
+    }
+    @include min(1200){
+        padding-bottom: size(70);
+
+    }
+    @include min(1400){
+    padding-bottom: size(90);
+
+    }
+   .insight-container{
+    max-width: size(1293);
+    margin: auto;
+    .insights-title{
+        margin-bottom: size(20);
+        @include min(992){
+            margin-bottom: size(55);
+        }
+        @include min(1200){
+            margin-bottom: size(65);
+        }
+        @include min(1400){
+        margin-bottom: size(75);
+
+        }
+    }
+   }
+    .insights-title{
+        .ttl-52{
+            line-height: 1;
+            font-family: $secondary-font;
+            color: $secondary-color;
+            margin-bottom: 0;
+            font-size: size(32);
+            @include min(768){
+               font-size: size(35);
+
+            }
+            @include min(1200){
+               font-size: size(40);
+            }
+            @include min(1400){
+               font-size: size(52);
+            }
+        }
+    }
+}
+
+.insights-slide{
+    gap: 23px;
+    margin-bottom: size(50);
+    @include min(992){
+        margin-bottom: size(60);
+
+    }
+    @include min(1200){
+        margin-bottom: size(70);
+
+    }
+    @include min(1400){
+    margin-bottom: size(93);
+
+    }
+    .insight-card{  
+        width: 100%;
+        border-bottom: 2px solid $gray-border;
+        transition:border 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        .insight-card-img{
+            // max-width: size(416);
+            width: 100%;
+            figure{
+                margin-bottom: 0;
+                @include aspectRatio(230 , 416);
+                overflow: hidden !important;;
+                img{
+                    transition:scale 0.3s ease-out;
+                }
+            }
+        }
+        &:hover{
+            border-bottom: 2px solid  $primary-color;
+            img{
+                scale: 1.05;
+            }
+        }
+    }
+}
+
+.insight-card-content{
+    flex-direction: column;
+    padding: size(20) 0;
+    @include min(992){
+        padding: size(25) 0;
+
+    }
+    @include min(1200){
+    padding: size(30) 0;
+
+    }
+    .insight-card-subttl{
+        margin-bottom: size(20);
+        @include min(992){
+        margin-bottom: size(30);
+
+        }
+        .fs-14{
+            font-weight: 500;
+            line-height: 1.42;
+            color: $primary-color;
+        }
+    }
+
+    .insight-card-ttl{
+        margin-bottom: size(20);
+        @include min(992){
+            margin-bottom: size(30);
+    
+            }
+        .ttl-20{
+            line-height: 1.55;
+            font-weight: 500;
+            color: $secondary-color;
+          
+                display: -webkit-box;       
+                -webkit-box-orient: vertical; 
+                -webkit-line-clamp: 2;      
+                overflow: hidden;           
+                text-overflow: ellipsis;    
+
+              
+        }
+    }
+
+    .insight-card-date{
+        margin-top: auto;
+        .fs-14{
+            color: $gray-color;
+            font-weight: 500;
+        }
+    }
+ 
+}

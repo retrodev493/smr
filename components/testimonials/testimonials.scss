@@ -1,0 +1,337 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+
+.testimonials_wrapper {
+    padding-bottom: size(40) !important;
+
+    @include min(768) {
+        padding-bottom: size(80) !important;
+
+    }
+
+    @include min(1200) {
+        padding-bottom: size(110) !important;
+
+    }
+
+    @include min(1400) {
+        padding-bottom: size(150) !important;
+
+    }
+
+    &>div {
+        background: $light-blue-background;
+    }
+
+    .testimonials_wrap {
+        max-width: size(1293);
+        margin: auto;
+        padding-top: size(40);
+        padding-bottom: size(50);
+
+        @include min(768) {
+            padding-top: size(60);
+            padding-bottom: size(50);
+        }
+
+        @include min(1200) {
+            padding-top: size(110);
+            padding-bottom: size(55);
+        }
+
+        @include min(1400) {
+            padding-top: size(150);
+            padding-bottom: size(75);
+        }
+
+        .testimonials_ttl {
+            margin-bottom: size(30);
+
+            @include min(992) {
+                margin-bottom: size(40);
+
+            }
+
+            @include min(1200) {
+                margin-bottom: size(50);
+
+            }
+
+            @include min(1600) {
+                margin-bottom: size(60);
+
+            }
+
+            .ttl-52 {
+                line-height: 1;
+                font-family: $secondary-font;
+                color: $secondary-color;
+                font-size: size(32);
+
+                @include min(768) {
+
+                    font-size: size(35);
+
+
+                }
+
+                @include min(1200) {
+                    font-size: size(40);
+
+
+                }
+
+                @include min(1400) {
+                    font-size: size(52);
+                }
+            }
+        }
+    }
+}
+
+.client-wrap {
+    gap: size(30);
+    margin-bottom: size(33);
+    flex-direction: column;
+
+    @include min(992) {
+        flex-direction: row;
+        margin-bottom: size(50);
+
+    }
+
+    @include min(1200) {
+        margin-bottom: size(60);
+
+    }
+
+    @include min(1400) {
+        margin-bottom: size(70);
+
+    }
+
+    .client-reports {
+        padding: size(27) size(23) size(27) size(23);
+        background-color: $white;
+        width: 100%;
+        border-bottom: 2px solid #C6E3F1;
+
+        @include min(992) {
+            width: 50%;
+            padding: size(30) size(30) size(30) size(30);
+
+
+        }
+
+        @include min(1200) {
+            padding: size(60) size(30) size(50) size(30);
+
+        }
+
+        @include min(1400) {
+            padding: size(80) size(47) size(60) size(47);
+        }
+
+        &>div {
+            margin-top: auto;
+            flex-direction: column;
+        }
+
+        .ttl-30 {
+            line-height: 1.4;
+            color: $secondary-color;
+            max-width: size(583);
+            margin-bottom: size(30);
+            font-weight: 500;
+        }
+    }
+}
+
+.client-text-container {
+    margin-bottom: size(50);
+
+    .fs-18 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        line-height: 1.6;
+        color: $secondary-color;
+        margin-bottom: 0;
+        font-size: size(18);
+
+    }
+
+    .read-more {
+
+        margin-top: 0.5em;
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+
+.client-medical-group {
+    gap: 31px;
+
+    .testimonials-circle-img {
+        border-radius: 100%;
+    }
+
+    .client-medical-name {
+        .fs-24 {
+            color: $primary-color;
+            line-height: 1.2;
+            margin-bottom: size(5);
+
+            @include min(992) {
+                margin-bottom: size(20);
+
+            }
+
+            @include min(1200) {
+                margin-bottom: size(24);
+
+            }
+        }
+
+        .fs-18 {
+            line-height: 1.55;
+            color: $primary-color;
+            font-weight: 500;
+            font-size: size(14);
+
+            @include min(992) {
+                font-size: size(16);
+            }
+
+            @include min(1200) {
+                font-size: size(18);
+
+            }
+        }
+    }
+}
+
+
+.client-video-wrapper {
+    border-bottom: 2px solid #C6E3F1;
+    background-color: $white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include min(992) {
+        width: 50%;
+
+    }
+
+    .client-video-wrap {
+
+        width: 100%;
+
+        figure {
+            position: relative;
+            width: 100%;
+            padding-bottom: 53.25%;
+            /* 16:9 aspect ratio (9/16 = 0.5625) */
+            height: 0;
+            overflow: hidden;
+
+            video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+                scale: 1.1;
+            }
+
+            .video-pause-btn {
+                border: none;
+                bottom: 20px;
+                left: 20px;
+                background-color: #D9D9D94D;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                height: 59px;
+                width: 59px;
+                border: 1px solid $white;
+                transition: scale 0.2s ease-in-out;
+                // img{
+                //     margin-left: 5px;
+
+                // }
+                // &:hover {
+                //     scale: 1.1;
+                // }
+                .pause-icon{
+                    display: none;
+                }
+
+                @include min(575) {
+                    bottom: 34px;
+                    left: 47px;
+                   height: 75px;
+                   width: 75px;
+                   padding: 0;
+      
+                }
+            }
+        }
+    }
+    .designation-data{
+        font-size: size(14);
+        @include min(992){
+            font-size: size(18);
+        }
+    }
+
+    .client-video-data {
+        padding: size(30) size(30);
+      
+
+        @include min(992) {
+            padding: size(35) size(35);
+
+        }
+
+        @include min(1200) {
+            padding: size(40) size(40);
+
+        }
+
+        @include min(1400) {
+            padding: size(60) size(47);
+
+        }
+
+        .fs-24 {
+            line-height: 1.2;
+            margin-bottom: size(20);
+            color: $primary-color;
+        }
+
+        .fs-18 {
+            line-height: 1.55;
+            color: $primary-color;
+            font-weight: 500;
+        }
+    }
+}
+
+.client-btn-wrapper {
+    .btn-outline-primary {
+
+        width: 100%;
+
+        @include min(475) {
+            width: max-content;
+        }
+    }
+}

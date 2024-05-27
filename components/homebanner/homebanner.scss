@@ -1,0 +1,144 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+.homeBanner {
+    padding-bottom: size(50) !important;
+    @include min(768){
+        padding-bottom: size(80) !important;
+
+    }
+    @include min(1200){
+        padding-bottom: size(110) !important;
+
+    }
+    @include min(1400){
+    padding-bottom: size(150) !important;
+
+    }
+}
+
+.homebanner-video-wrap {
+    position: relative;
+    height: 100vh;
+  
+    video {
+        width: 100%;
+        position: absolute;
+        object-fit:cover;
+        height: 100%;
+        
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0) 32.04%, rgba(10, 10, 18, 0.9) 108.68%);
+        opacity: .20;
+        z-index: 9;
+    }
+}
+
+.banner-wrapper{
+    z-index: 99;
+    bottom: 50px;
+    @include min(1200){
+        bottom: 100px;
+
+    }
+    .ttl-85{
+        font-family: $secondary-font;
+        line-height: 1.14;
+    padding-right: size(12);
+
+    }
+    .banner-text-wrap{
+        margin-bottom: size(55);
+        @include min(992){
+            margin-bottom: size(75);
+
+        }
+    }
+}
+
+.banner-btn{
+    margin-bottom: size(50);
+    @include min(1200){
+    margin-bottom: size(75);
+
+    }
+    .btn-outline-light{
+        width: calc(100% - 16px);
+
+        @include min(475){
+            width: max-content;
+        }
+    }
+}
+
+.homeBanner .swiper-pagination{
+    width: max-content;
+    bottom: size(45) !important;
+    @include min(1200){
+    bottom: size(91) !important;
+    }
+    .swiper-pagination-bullet{
+        opacity: 1 !important;
+        background-color: #fff !important;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            scale: 1.3 !important;
+        }
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #5f61e6 !important;
+    
+
+    }
+}
+
+.banner-swiper-btn{
+    right: 0 !important;
+    bottom: size(70) !important;
+    background-color: #D9D9D94D !important;
+    height: size(38);
+    z-index: 999;
+        width: size(62);
+        right: 0 !important;
+        border-radius: 20px !important;
+        display: none;
+    .swiper-button-next {
+        right: 0 !important;
+        left: size(30) !important;
+        color: #fff;
+        position: absolute;
+        
+        transition: opacity 0.3s ease-in-out;
+        &::after{
+            font-size: size(15) !important;
+        }
+        &:hover{
+            opacity: 0.6 !important;
+        }
+    }
+
+    .swiper-button-prev{
+        right: unset !important;
+        left: 8px !important;
+        color: #fff;
+        transition: opacity 0.3s ease-in-out;
+        &::after{
+            font-size: size(15) !important;
+        }
+        &:hover{
+            opacity: 0.6 !important;
+        }
+    }
+
+    @include min(992){
+        display: block;
+    }
+}
+

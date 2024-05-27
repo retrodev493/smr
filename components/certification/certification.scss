@@ -1,0 +1,124 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+.certification_wrapper{
+    padding-bottom: size(50) !important;
+    @include min(768){
+        padding-bottom: size(80) !important;
+            
+    }
+    @include min(1200){
+        padding-bottom: size(110) !important;
+
+    }
+    @include min(1400){
+    padding-bottom: size(150) !important;
+
+    }
+    .certification_content{
+        max-width: size(780) !important;
+        margin: 0 auto;
+        margin-bottom: size(40);
+        @include min(992){
+        margin-bottom: size(50);
+            
+        }
+        @include min(1200){
+            margin-bottom: size(60);
+
+        }
+        @include min(1400){
+            margin-bottom: size(75);
+
+        }
+        .ttl-52{
+            color: $secondary-color;
+            line-height: 1;
+            margin-bottom: size(15);
+            font-family: $secondary-font;
+            font-size: size(32);
+
+            @include min(768){
+                text-align: center;
+                font-size: size(35);
+            margin-bottom: size(30);
+
+             }
+             @include min(1200){
+                font-size: size(40);
+
+             }
+             @include min(1400){
+                font-size: size(52);
+             }
+        }
+        .fs-18{
+            line-height: 1.66;
+            color: $secondary-color;
+
+        }
+    }
+}
+
+.certification-logo-wrap{
+ 
+    margin: 0 -30px;
+    margin-bottom: size(60);
+    flex-wrap: wrap;
+   
+    row-gap: 30px;
+
+    .certification-img-wrap {
+       
+    width: 100%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 32.5px;
+    display: flex;
+    justify-content: center;
+        @include min(768){
+            width: auto;
+        }
+        @include min(992){
+            flex: 0 0 16.66%;
+            max-width: 16.66%;
+            padding: 0;
+        }
+    }
+
+    @include min(992){
+        margin-bottom: size(65);
+
+    }
+    @include min(1200){
+        margin-bottom: size(70);
+
+    }
+    @include min(1400){
+    margin-bottom: size(74.62);
+
+    }
+
+    img{
+        // width: 100%;
+    // height: 100%;
+    object-fit: contain;
+    }
+}
+
+.certification_wrap{
+    overflow-x: hidden;
+    .btn-outline-primary{
+        width: 100%;
+        @include min(475){
+            width: max-content;
+        }
+    }
+    
+}
+.certification-logo-wrap{
+    justify-content: flex-start;
+    @include min(992){
+    justify-content: space-between;
+    }
+}
