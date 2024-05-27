@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="SMR" content="St.Mary’s Rubbers Pvt. Ltd. incorporated on 17th Oct 2002 under the Companies Act of 1956. The Company was promoted by Mr. Sunny Jacob and his wife Mrs. Mini Sunny, Edakkattu (H), Koovapally, Kanjirapally, Kottayam (DIST).">
-  <link rel="icon" href="./assets/images/favicon.ico" sizes="32x32" type="image/ico">
+    <meta name="description" content="With more than two decades of expertise in the field of Natural Rubber Centrifuged Latex, SMR has sculpted itself for global mercantilism. " />
+    <link rel="icon" href="./assets/images/favicon.ico" sizes="32x32" type="image/ico">
 
     <link rel="stylesheet" href="assets/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
