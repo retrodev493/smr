@@ -5,15 +5,12 @@
     padding-bottom: size(50) !important;
     @include min(768){
         padding-bottom: size(80) !important;
-            
     }
     @include min(1200){
         padding-bottom: size(110) !important;
-
     }
     @include min(1400){
     padding-bottom: size(150) !important;
-
     }
     .certification_content{
         max-width: size(780) !important;
@@ -21,15 +18,12 @@
         margin-bottom: size(40);
         @include min(992){
         margin-bottom: size(50);
-            
         }
         @include min(1200){
             margin-bottom: size(60);
-
         }
         @include min(1400){
             margin-bottom: size(75);
-
         }
         .ttl-52{
             color: $secondary-color;
@@ -41,12 +35,10 @@
             @include min(768){
                 text-align: center;
                 font-size: size(35);
-            margin-bottom: size(30);
-
+                margin-bottom: size(30);
              }
              @include min(1200){
                 font-size: size(40);
-
              }
              @include min(1400){
                 font-size: size(52);
@@ -100,8 +92,6 @@
     }
 
     img{
-        // width: 100%;
-    // height: 100%;
     object-fit: contain;
     }
 }

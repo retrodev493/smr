@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="homebanner-video-wrap">
-            <video  poster="assets/images/poster.png" muted loop autoplay src="/"></video>
+            <video id="video2" poster="assets/images/poster.png" muted loop autoplay src="assets/images/bannervideo.mp4"></video>
         </div>
       </div>
       <div class="swiper-slide position-relative">
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="homebanner-video-wrap">
-            <video id="video2" poster="assets/images/poster.png" muted loop autoplay src="assets/images/bannervideo.mp4"></video>
+            <video  poster="assets/images/poster.png" muted loop autoplay src="/"></video>
         </div>
 
       </div>   

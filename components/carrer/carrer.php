@@ -3,7 +3,7 @@
     <div class="carrer-wrap d-flex justify-content-between align-items-center">
     <div class="carrer-banner-img">
     <figure class="mb-0">
-        <img src="assets/images/carrer/1.png" alt="carrer">
+        <img width="738" height="499" src="assets/images/carrer/1.jpg" alt="carrer">
     </figure>
     </div>
     <div class="carrer-content-wrapper">

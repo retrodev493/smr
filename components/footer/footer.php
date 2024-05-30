@@ -49,16 +49,16 @@
                         <div class="social-media-links">
                             <ul class="d-flex justify-content-between">
                                 <li><a title= "linkedin" href="./">
-                                    <img src="assets/images/svg/footer/1.svg" alt="Linkedin">
+                                    <img width="22.62" height="18.85" src="assets/images/svg/footer/1.svg" alt="Linkedin">
                                 </a></li>
                                 <li><a title="Youtube" href="./">
-                                    <img src="assets/images/svg/footer/2.svg" alt="Youtube">
+                                    <img width="22.62" height="18.85" src="assets/images/svg/footer/2.svg" alt="Youtube">
                                 </a></li>
                                 <li><a title="Instagram" href="./">
-                                    <img src="assets/images/svg/footer/3.svg" alt="Instagram">
+                                    <img width="22.62" height="18.85" src="assets/images/svg/footer/3.svg" alt="Instagram">
                                 </a></li>
                                 <li><a title="Facebbok" href="./">
-                                    <img src="assets/images/svg/footer/4.svg" alt="Facebbok">
+                                    <img width="22.62" height="18.85" src="assets/images/svg/footer/4.svg" alt="Facebbok">
                                 </a></li>
                             </ul>
                         </div>
@@ -70,24 +70,21 @@
             <span class="fs-16 fw-normal">Designed by <a class="tech-provider fw-normal text-decoration-none" title="webandcrafts" href="https://webandcrafts.com/"> Webandcrafts</a></span>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script> 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
+    <script src="assets/js/vendors/gsap.min.js"></script>
+    <script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendors/lenis.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.min.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
     <!-- Lazyload -->
-    <script src="assets/js/vendors/lazyload-all.js" async=""></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="assets/js/vendors/lazyload-all.js" async=""></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
     <script type="text/javascript" src="assets/js/animations.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script>
-        function loadJS(u) {
-        var r = document.getElementsByTagName("script")[0],
-            s = document.createElement("script");
-            s.src = u;
-            r.parentNode.insertBefore(s, r);
-        }
-    </script>
+
 </footer>
 

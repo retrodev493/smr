@@ -67,6 +67,8 @@ html.lenis body {
         background-color: $primary-color;
         border: none;
         border-radius: 300px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out; /* Smooth transition */
     }
     @include min(1400){
         right: 150px;

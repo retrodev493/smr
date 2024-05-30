@@ -17,7 +17,7 @@
 
     }
     .plantation-bg{
-       background-image: url(../../assets/images/plantation/1.png);
+       background-image: url(../../assets/images/plantation/1.jpg);
        min-height: size(532);
        padding-bottom: size(150);
        position: relative;
@@ -44,6 +44,7 @@
         transform: translate(0 , 0);
         text-align: start;
         max-width: 500px;
+       
 
         @include min(768){
         top: 50%;

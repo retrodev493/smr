@@ -141,28 +141,58 @@
 .client-text-container {
   margin-bottom: 3.125rem;
 }
-.client-text-container .fs-18 {
+.client-text-container .line-clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: clip;
   -webkit-line-clamp: 4;
+}
+.client-text-container .fs-18 {
   line-height: 1.6;
   color: #001B3B;
   margin-bottom: 0;
   font-size: 1.125rem;
 }
 .client-text-container .read-more {
-  margin-top: 0.5em;
+  border: none;
+  background: #fff !important;
+  display: inline-flex;
   color: #001B3B;
   text-decoration: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .client-medical-group {
-  gap: 31px;
+  gap: 20px;
+}
+@media screen and (min-width: 992px) {
+  .client-medical-group {
+    gap: 31px;
+  }
 }
 .client-medical-group .testimonials-circle-img {
   border-radius: 100%;
+  width: 108px;
+}
+.client-medical-group .testimonials-circle-img .testimonials-dp {
+  max-width: 108px;
+  width: 100%;
+}
+.client-medical-group .testimonials-circle-img .testimonials-dp figure {
+  margin-bottom: 0;
+  padding-top: calc(108 / 108 * 100%);
+  position: relative;
+}
+.client-medical-group .testimonials-circle-img .testimonials-dp figure img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
 }
 .client-medical-group .client-medical-name .fs-24 {
   color: #085F8B;
@@ -215,7 +245,6 @@
   position: relative;
   width: 100%;
   padding-bottom: 53.25%;
-  /* 16:9 aspect ratio (9/16 = 0.5625) */
   height: 0;
   overflow: hidden;
 }
@@ -226,7 +255,6 @@
   width: 100%;
   height: 100%;
   border: 0;
-  scale: 1.1;
 }
 .client-video-wrapper .client-video-wrap figure .video-pause-btn {
   border: none;
@@ -298,4 +326,22 @@
   .client-btn-wrapper .btn-outline-primary {
     width: max-content;
   }
+}
+
+.btn-video .modal-dialog {
+  max-width: 62.5rem;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin: 0 auto !important;
+  padding: 0 15px !important;
+}
+.btn-video .modal-body {
+  padding: 0 !important;
+}
+.btn-video .modal-body video {
+  width: 100%;
+  object-fit: cover;
+  max-height: 500px !important;
+  padding: 12px;
+  border-radius: 21px;
 }

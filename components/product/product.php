@@ -5,7 +5,7 @@
         <p class="fs-18 fw-normal">Our attention to detail ensures your utmost comfort without negotiating the quality of our gloves. We serve the hand protection exigencies of multiple industries globally</p>
     </div>
 
-    <div class="swiper productSwiper ">
+    <div class="swiper productSwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="./" title="products" class="productWrap d-flex text-decoration-none">
@@ -73,6 +73,8 @@
         </div>
 
     </div>
-    <div class="swiper-button-next"></div>
+ <div class="product-btn-wrapper">
+ <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
+ </div>
 </section>

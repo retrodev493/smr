@@ -1,5 +1,5 @@
 .smrgroup-wrapper {
-  padding-bottom: 50px !important;
+  padding-bottom: 60px !important;
 }
 @media screen and (min-width: 768px) {
   .smrgroup-wrapper {
@@ -51,16 +51,18 @@
   font-family: "Baskervville", serif;
   text-align: center;
   margin-bottom: 3.125rem;
-  line-height: 1.57;
+  line-height: 1.2;
 }
 @media screen and (min-width: 756px) {
   .smrgroup-wrapper .smrgroup .ttl-35 {
     margin-bottom: 3.75rem;
+    line-height: 1.2;
   }
 }
 @media screen and (min-width: 992px) {
   .smrgroup-wrapper .smrgroup .ttl-35 {
     margin-bottom: 4.375rem;
+    line-height: 1.57;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -89,6 +91,7 @@
 }
 .smr-box-wrapper .fs-18 {
   color: #001B3B;
+  line-height: 1.2;
 }
 @media screen and (min-width: 545px) {
   .smr-box-wrapper {

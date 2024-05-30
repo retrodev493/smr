@@ -64,17 +64,11 @@
 .product-wrapper .swiper-button-next {
   right: 100px !important;
   color: #001B3B;
-  display: none;
   top: 45% !important;
   transition: 0.3s ease-in;
 }
 .product-wrapper .swiper-button-next:hover {
   scale: 1.2;
-}
-@media screen and (min-width: 1600px) {
-  .product-wrapper .swiper-button-next {
-    display: block;
-  }
 }
 .product-wrapper .swiper-button-next::after {
   font-size: 27px !important;
@@ -82,17 +76,11 @@
 .product-wrapper .swiper-button-prev {
   left: 100px !important;
   color: #001B3B !important;
-  display: none;
   top: 45% !important;
   transition: 0.3s ease-in;
 }
 .product-wrapper .swiper-button-prev:hover {
   scale: 1.2;
-}
-@media screen and (min-width: 1600px) {
-  .product-wrapper .swiper-button-prev {
-    display: block;
-  }
 }
 .product-wrapper .swiper-button-prev::after {
   font-size: 27px !important;
@@ -135,6 +123,10 @@
   min-height: 13rem !important;
   flex-grow: 1;
 }
+.productSwiper .productWrap .product-img img {
+  max-width: 300px !important;
+  max-height: 200px !important;
+}
 .productSwiper .productWrap .product-details {
   padding: 0 2.5rem;
   padding-bottom: 1.875rem;
@@ -151,4 +143,28 @@
 }
 .productSwiper:not(:first-child) .productWrap {
   margin-right: -1px;
+}
+
+@media screen and (max-width: 1599.98px) {
+  .product-btn-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: -32px;
+    top: -27px;
+    background: red;
+    z-index: 9999;
+    max-width: 1564px;
+    margin: auto;
+    padding: 0 16px;
+  }
+}
+@media screen and (max-width: 1599.98px) and (max-width: 574.99px) {
+  .swiper-button-next::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 1599.98px) and (max-width: 574.99px) {
+  .swiper-button-prev::after {
+    display: none;
+  }
 }

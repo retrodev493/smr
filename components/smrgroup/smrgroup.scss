@@ -2,7 +2,7 @@
 @import '../common/mixins/mixins';
 
 .smrgroup-wrapper {
-    padding-bottom: 50px !important;
+    padding-bottom: 60px !important;
 
     @include min(768) {
         padding-bottom: 80px !important;
@@ -52,15 +52,17 @@
             font-family: $secondary-font;
             text-align: center;
             margin-bottom: size(50);
-            line-height: 1.57;
-
+            line-height: 1.2;
             @include min(756) {
                 margin-bottom: size(60);
+            line-height: 1.2;
 
             }
 
             @include min(992) {
                 margin-bottom: size(70);
+            line-height: 1.57;
+
 
             }
 
@@ -71,7 +73,6 @@
 
             @include min(1400) {
                 margin-bottom: size(90);
-
             }
         }
     }
@@ -91,6 +92,7 @@
 
     .fs-18 {
         color: $secondary-color;
+        line-height: 1.2;
     }
     text-align: start;
     @include min(545) {
@@ -113,33 +115,3 @@
         flex-direction: row;
     }
 }
-
-// .smr-chat {
-//     display: none;
-//     position: sticky;
-    
-//     @media (min-width: 992px) {
-//         bottom: -65px;
-//         right: 0;
-//         width: 63px;
-//         height: 63px;
-//         background-color: $secondary-color;
-//         border-radius: 100%;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         border: none;
-//         transition: transform 0.1s ease-in; 
-
-//         &:hover {
-//             transform: scale(1.1);
-//         }
-//     }
-
-//     @media (min-width: 1600px) {
-//         top: 100px;
-//         left:100% !important;
-//         // bottom: 0;
-//         // right: 100px !important;
-//     }
-// }

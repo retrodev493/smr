@@ -34,11 +34,24 @@ body {
     display: block;
     font-size: 1.125rem;
     transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
   }
-  .main-nav > ul > li a:hover {
-    transform: translateY(-10px);
+  .main-nav > ul > li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-out;
   }
-  .main-nav > ul > li:last-child a {
+  .main-nav > ul > li:hover::after {
+    width: 50%;
+  }
+  .main-nav > ul > li:last-child li a {
     padding-right: 0 !important;
   }
 }
@@ -190,7 +203,7 @@ body {
     position: fixed;
     max-width: 100%;
     top: 4.4rem;
-    padding: 2.8125rem;
+    padding: 1rem;
     padding-top: 2.1875rem;
     right: 0;
     height: 100%;
@@ -227,7 +240,7 @@ body {
     font-size: 1rem;
     letter-spacing: 0.05rem;
     display: block;
-    padding: 20px 11px;
+    padding: 18px 11px;
     font-weight: 500;
     padding-left: 0;
     padding-right: 0;
@@ -391,5 +404,22 @@ body.show-menu .mob-btn span + span + span {
 @media screen and (min-width: 575px) {
   .sm-logo {
     display: none;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .main-nav ul {
+    max-width: 508px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-nav ul {
+    max-width: 688px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-nav ul {
+    max-width: 928px;
   }
 }

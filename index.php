@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta property="og:title" content="SMR">
     <meta name="description" content="With more than two decades of expertise in the field of Natural Rubber Centrifuged Latex, SMR has sculpted itself for global mercantilism. " />
+    <meta property="og:image" content="./assets/images/poster.png">
+    <meta property="og:url" content="https://dev.uiwac.webc.in/juniors-2023/devadathan_biju/SMR/index.php">
+    <meta property="og:type" content="website">
+    
     <link rel="icon" href="./assets/images/favicon.ico" sizes="32x32" type="image/ico">
 
     <link rel="stylesheet" href="assets/css/main.min.css">
@@ -33,18 +39,14 @@
     <?php include('components/carrer/carrer.php');?>
     <?php include('components/insights/insights.php');?>
   
-   <div class="container position-relative">
-   <button class="smr-chat">
-    <img src="assets/images/chat-bot/chat.svg" alt="chat">
+    <button class="smr-chat">
+      <img src="assets/images/chat-bot/chat.svg" alt="chat">
     </button>
-   </div>
 </main>
 
 <?php include('components/footer/footer.php');?>
     <!-- pagescript here... -->
-    <script>
-        
-    </script>
+    <script src="/SMR/assets/js/vendors/gsap.min.js"></script>
     <!-- End pagescript here... -->
 </body>
 
